@@ -18,6 +18,11 @@ const context = {
 };
 
 server.get('*', (req, res) => {
+  /**
+   * @desc vue根实例；
+   * 1. 每次页面改变都需要重新实例化app
+   * 2. 
+   */
   const app = new Vue({
     data: {
       url: req.url
